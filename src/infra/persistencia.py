@@ -1,7 +1,7 @@
 import json
 import os
 
-CAMINHO_ARQUIVO = "src/infra/data/dados_contas.json"
+CAMINHO_ARQUIVO = os.path.join(os.path.dirname(__file__), 'data', 'dados_contas.json')
 
 def carregar_dados():
     """Carrega os dados do arquivo json.
